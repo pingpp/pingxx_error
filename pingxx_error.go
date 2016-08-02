@@ -7,9 +7,10 @@ import (
 )
 
 type PingxxErr struct {
-	Code    int
-	Message string
-	DeepErr error //底层错误信息 可能为nil
+	Code      int
+	Message   string
+	MsgDetail string
+	DeepErr   error //底层错误信息 可能为nil
 
 	Filename string
 	Line     int
